@@ -573,9 +573,36 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform .5s;
+    transition: all .5s;
     background-size: 400%;
     animation: btnanimate 5s linear infinite;
+    border: none;
+    position: relative;
+    outline: none;
+}
+
+.tabbar_addcart::after {
+    content: "";
+    background: rgb(245, 171, 158);
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 55%;
+    opacity: 0;
+    transition: all 1s;
+    position: absolute;
+    border-radius: 6px;
+}
+
+.tabbar_addcart:active::after {
+    padding: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.tabbar_addcart:active {
+    border: none;
 }
 
 .tabbar_cart {
@@ -649,6 +676,9 @@ body {
         width: 180px;
         height: 70px;
         font-size: 19px;
+    }
+    .tabbar_addcart::after {
+        padding: 35px 55%;
     }
     .tabbar_cart {
         width: 70px;
