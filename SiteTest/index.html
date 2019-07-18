@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
 </head>
 <body>
-<!-- Head -->
+    <!-- Head -->
     <div class="head">
         <div class="head_back_wrapper">
             <a href="#" class="head_back_link">
@@ -34,8 +34,8 @@
             </div>
         </div>
         <div class="head_title_wrapper">
-            <div class="head_title_text">Вы просматриваете каталог</div>
-            <div class="head_title_link">www.joesnewbalanceoutlet.com</div>
+            <p class="head_title_text">Вы просматриваете каталог</p>
+            <p class="head_title_link">www.joesnewbalanceoutlet.com</p>
         </div>
         <div class="head_close_wrapper">
             <a href="#" class="head_close_link">
@@ -50,71 +50,72 @@
     </div>
 
 <!-- Pop-up Slider -->
-    <div class="pop-up_background"></div>
-    <div class="pop-up_slider">
-        <div class="pop-up_slider_window">
-            <div class="slider_close_btn" onclick="closePopUp()">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.5154 12.1766L9.83892 7.50064L14.5154 2.82471C15.1596 2.17966 15.1596 1.13266 14.517 0.485868C13.8712 -0.162512 12.8256 -0.160844 12.1797 0.484201L7.49999 5.16346L2.82029 0.484201C2.17443 -0.160844 1.1288 -0.162512 0.48294 0.485868C-0.161257 1.13258 -0.161257 2.17958 0.484606 2.82471L5.16106 7.50064L0.484606 12.1766C-0.161257 12.8216 -0.161257 13.8686 0.48294 14.5154C0.805081 14.8396 1.22958 15 1.65249 15C2.0754 15 2.49823 14.8379 2.82037 14.517L7.50007 9.83772L12.1798 14.517C12.5019 14.8396 12.9247 15 13.3477 15C13.7706 15 14.1951 14.8379 14.5172 14.5154C15.1612 13.8686 15.1612 12.8216 14.5154 12.1766Z" fill="#FF754D"/>
-                </svg>                        
-            </div>
-            <div class="slider_left_btn" onclick="plusSlides(-1)">
-                <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="9" height="12" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0" transform="scale(0.111111 0.0833333)"/>
-                    </pattern>
-                    <image id="image0" width="9" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMCAYAAACwXJejAAAABGdBTUEAALGOfPtRkwAAANJJREFUGBl1kL0OAUEUhWfXT0OnpqSm4A3YTiLZqFciEQkahXewNVGgkGgUso1Kp9BIPIGEWnQqzfpmyGSxTvLl3j1z7p3MGr7vizA5fS+H78Ao+idQx59CAm5GcBPTcUwXOiC1gJbeRCCNsYISPKA7d6sTqlAhAmX6JaTgDDaBA1Upcrnna3QeyPs3YBE4UbVMuuDz5PePTKbWuBW4ggVHri9StdQkwS1OAfaQgR3BNlXp+xfEcIfQex2rxzQ/Qu8DwRabfgZJGISGZJhgltKA8RNKZUF8XD/cnQAAAABJRU5ErkJggg=="/>
-                    </defs>
-                </svg>                                          
-            </div>
-            <div class="slider_content_wrapper">
-                <div class="slider_content fade">
-                    <img src="boat.jpg" alt="Info-Picture">
-                    <p class="slider_text">
-                        Находясь в карточке товара, укажите параметры заказываемой вещи “Цена”, “Цвет” и нажмите кнопку “Добавить товар в корзину”
-                    </p>
+    <div class="pop-up_slider_wrapper">
+        <div class="pop-up_background" onclick="closePopUp()"></div>
+        <div class="pop-up_slider">
+            <div class="pop-up_slider_window">
+                <div class="slider_close_btn" onclick="closePopUp()">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5154 12.1766L9.83892 7.50064L14.5154 2.82471C15.1596 2.17966 15.1596 1.13266 14.517 0.485868C13.8712 -0.162512 12.8256 -0.160844 12.1797 0.484201L7.49999 5.16346L2.82029 0.484201C2.17443 -0.160844 1.1288 -0.162512 0.48294 0.485868C-0.161257 1.13258 -0.161257 2.17958 0.484606 2.82471L5.16106 7.50064L0.484606 12.1766C-0.161257 12.8216 -0.161257 13.8686 0.48294 14.5154C0.805081 14.8396 1.22958 15 1.65249 15C2.0754 15 2.49823 14.8379 2.82037 14.517L7.50007 9.83772L12.1798 14.517C12.5019 14.8396 12.9247 15 13.3477 15C13.7706 15 14.1951 14.8379 14.5172 14.5154C15.1612 13.8686 15.1612 12.8216 14.5154 12.1766Z" fill="#FF754D"/>
+                    </svg>                        
                 </div>
-                <div class="slider_content fade">
-                    <img src="boat.jpg" alt="Info-Picture">
-                    <p class="slider_text">
-                        Находясь в карточке товара, укажите параметры заказываемой вещи “Цена”, “Размер” и нажмите кнопку “Добавить товар в корзину”
-                    </p>
+                <div class="slider_left_btn" onclick="plusSlides(-1)">
+                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="9" height="12" fill="url(#pattern0)"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0" transform="scale(0.111111 0.0833333)"/>
+                        </pattern>
+                        <image id="image0" width="9" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMCAYAAACwXJejAAAABGdBTUEAALGOfPtRkwAAANJJREFUGBl1kL0OAUEUhWfXT0OnpqSm4A3YTiLZqFciEQkahXewNVGgkGgUso1Kp9BIPIGEWnQqzfpmyGSxTvLl3j1z7p3MGr7vizA5fS+H78Ao+idQx59CAm5GcBPTcUwXOiC1gJbeRCCNsYISPKA7d6sTqlAhAmX6JaTgDDaBA1Upcrnna3QeyPs3YBE4UbVMuuDz5PePTKbWuBW4ggVHri9StdQkwS1OAfaQgR3BNlXp+xfEcIfQex2rxzQ/Qu8DwRabfgZJGISGZJhgltKA8RNKZUF8XD/cnQAAAABJRU5ErkJggg=="/>
+                        </defs>
+                    </svg>                                          
                 </div>
-                <div class="slider_content fade">
-                    <img src="boat.jpg" alt="Info-Picture">
-                    <p class="slider_text">
-                        Находясь в карточке товара, укажите параметры заказываемой вещи “Цена”, “Размер”, “Цвет”
-                    </p>
+                <div class="slider_content_wrapper">
+                    <div class="slider_content fade">
+                        <iframe src="https://www.youtube.com/embed/OXuIqaeg0SI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="slider_text">
+                            Находясь в карточке товара, укажите параметры заказываемой вещи “Цена”, “Цвет” и нажмите кнопку “Добавить товар в корзину”
+                        </p>
+                    </div>
+                    <div class="slider_content fade">
+                        <img src="boat.jpg" alt="Info-Picture">
+                        <p class="slider_text">
+                            Находясь в карточке товара, укажите параметры заказываемой вещи “Цена”, “Размер” и нажмите кнопку “Добавить товар в корзину”
+                        </p>
+                    </div>
+                    <div class="slider_content fade">
+                        <img src="boat.jpg" alt="Info-Picture">
+                        <p class="slider_text">
+                            Находясь в карточке товара, укажите параметры заказываемой вещи “Цена”, “Размер”, “Цвет”
+                        </p>
+                    </div>
+                    <div class="slider_content fade">
+                        <img src="boat.jpg" alt="Info-Picture">
+                        <p class="slider_text">
+                            Находясь в карточке товара, укажите параметры заказываемой вещи, “Размер”, “Цвет” и нажмите кнопку “Добавить товар в корзину”
+                        </p>
+                    </div>
+                    <div class="slider_circle_wrapper">
+                        <span class="slider_circle" onclick="currentSlide(1)"></span>
+                        <span class="slider_circle" onclick="currentSlide(2)"></span>
+                        <span class="slider_circle" onclick="currentSlide(3)"></span>
+                        <span class="slider_circle" onclick="currentSlide(4)"></span>
+                    </div>
                 </div>
-                <div class="slider_content fade">
-                    <img src="boat.jpg" alt="Info-Picture">
-                    <p class="slider_text">
-                        Находясь в карточке товара, укажите параметры заказываемой вещи, “Размер”, “Цвет” и нажмите кнопку “Добавить товар в корзину”
-                    </p>
+                <div class="slider_right_btn" onclick="plusSlides(1)">
+                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="9" height="12" transform="matrix(-1 0 0 1 9 0)" fill="url(#pattern0)"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0" transform="scale(0.111111 0.0833333)"/>
+                        </pattern>
+                        <image id="image0" width="9" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMCAYAAACwXJejAAAABGdBTUEAALGOfPtRkwAAANJJREFUGBl1kL0OAUEUhWfXT0OnpqSm4A3YTiLZqFciEQkahXewNVGgkGgUso1Kp9BIPIGEWnQqzfpmyGSxTvLl3j1z7p3MGr7vizA5fS+H78Ao+idQx59CAm5GcBPTcUwXOiC1gJbeRCCNsYISPKA7d6sTqlAhAmX6JaTgDDaBA1Upcrnna3QeyPs3YBE4UbVMuuDz5PePTKbWuBW4ggVHri9StdQkwS1OAfaQgR3BNlXp+xfEcIfQex2rxzQ/Qu8DwRabfgZJGISGZJhgltKA8RNKZUF8XD/cnQAAAABJRU5ErkJggg=="/>
+                        </defs>
+                    </svg>
                 </div>
-                <div class="slider_circle_wrapper">
-                    <span class="slider_circle" onclick="currentSlide(1)"></span>
-                    <span class="slider_circle" onclick="currentSlide(2)"></span>
-                    <span class="slider_circle" onclick="currentSlide(3)"></span>
-                    <span class="slider_circle" onclick="currentSlide(4)"></span>
-                </div>
-            </div>
-            <div class="slider_right_btn" onclick="plusSlides(1)">
-                <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="9" height="12" transform="matrix(-1 0 0 1 9 0)" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0" transform="scale(0.111111 0.0833333)"/>
-                    </pattern>
-                    <image id="image0" width="9" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMCAYAAACwXJejAAAABGdBTUEAALGOfPtRkwAAANJJREFUGBl1kL0OAUEUhWfXT0OnpqSm4A3YTiLZqFciEQkahXewNVGgkGgUso1Kp9BIPIGEWnQqzfpmyGSxTvLl3j1z7p3MGr7vizA5fS+H78Ao+idQx59CAm5GcBPTcUwXOiC1gJbeRCCNsYISPKA7d6sTqlAhAmX6JaTgDDaBA1Upcrnna3QeyPs3YBE4UbVMuuDz5PePTKbWuBW4ggVHri9StdQkwS1OAfaQgR3BNlXp+xfEcIfQex2rxzQ/Qu8DwRabfgZJGISGZJhgltKA8RNKZUF8XD/cnQAAAABJRU5ErkJggg=="/>
-                    </defs>
-                </svg>
             </div>
         </div>
     </div>
-
     <!-- Tabbar Horizontal -->
     <div class="tabbar_horizontal">
         <!-- Tabbar Up Buttons -->
@@ -149,6 +150,9 @@
             </div>
             <div class="tabbar_info_panel_order_btn" onclick="closeTabbarHorizontalInfoPanel()">
                 Cделать заказ
+            </div>
+            <div class="tabbar_horizontal_author">
+                <p>Powered by ProxyAnything.com</p>
             </div>
         </div>
         <!-- Tabbar Forms Horizontal -->
@@ -188,6 +192,9 @@
             <div class="tabbar_position_btns">
                 <div class="tabbar_horizontal_pos_btn"></div>
                 <div class="tabbar_vertical_pos_btn" onclick="verticalPosition()"></div>
+            </div>
+            <div class="tabbar_horizontal_author">
+                <p>Powered by ProxyAnything.com</p>
             </div>
         </div>
     </div>
@@ -271,7 +278,11 @@
                     </div>
                     <div class="head_info_text">Как сделать заказ?</div>
                 </div>
+                <div class="tabbar_horizontal_author">
+                    <p>Powered by ProxyAnything.com</p>
+                </div>
             </div>
+
         </div>
         <!-- Tabbar Vertical Forms Panel -->
         <div class="tabbar_vertical_forms_panel">
@@ -326,6 +337,9 @@
                         <div class="head_info_text">Как сделать заказ?</div>
                     </div>
                 </div>
+            </div>
+            <div class="tabbar_horizontal_author">
+                <p>Powered by ProxyAnything.com</p>
             </div>
         </div>
         <div class="tabbar_vertical_pos_btns">

@@ -13,8 +13,8 @@ function tabbarHorizontalOpnCls() {
         tabbarUpBtns.classList.add('tabbar_up_btns_on');
         tabbarUpBtns.style.background = 'none';
         tabbarBtnIcon.style.transform = 'rotateZ(0)';
-        tabbarOrderBtn.style.transform = 'scale(0)';
-        tabbarInfoBtn.style.transform = 'scale(0)';
+        tabbarOrderBtn.style.display = 'none';
+        tabbarInfoBtn.style.display = 'none';
         tabbarInfoPanel.style.height = '180px';
 
         closeTabbarHorizontal = true;
@@ -23,8 +23,8 @@ function tabbarHorizontalOpnCls() {
         tabbarUpBtns.classList.remove('tabbar_up_btns_on');
         tabbarUpBtns.style.background = 'linear-gradient(180deg, rgba(255, 255, 255, 0.0001) 0%, #bdbcbc 100%)';
         tabbarBtnIcon.style.transform = 'rotateZ(180deg)';
-        tabbarOrderBtn.style.transform = 'scale(1)';
-        tabbarInfoBtn.style.transform = 'scale(1)';
+        tabbarOrderBtn.style.display = 'flex';
+        tabbarInfoBtn.style.display = 'flex';
         tabbarInfoPanel.style.height = '0';
 
         closeTabbarHorizontal = false;
@@ -80,17 +80,14 @@ function closeTabbarVerticalInfoPanel() {
 }
 
 //Close/open pop-up slider script
-let PopUpBackground = document.querySelector('.pop-up_background');
-    PopUpSlider = document.querySelector('.pop-up_slider');
+let PopUpWrapper = document.querySelector('.pop-up_slider_wrapper')
 
 function openPopUp() {
-    PopUpBackground.style.display = 'block';
-    PopUpSlider.style.display = 'flex';
+    PopUpWrapper.style.display = 'flex';
 }
 
 function closePopUp() {
-    PopUpBackground.style.display = 'none';
-    PopUpSlider.style.display = 'none';
+    PopUpWrapper.style.display = 'none';
 }
 
 //Scroll script
