@@ -57,6 +57,10 @@ button {
     height: 12px;
 }
 
+.head_back_text {
+    display: none;
+}
+
 .head_info_wrapper {
     display: none;
 }
@@ -76,6 +80,10 @@ button {
 
 .head_close_wrapper {
     margin: auto 20px auto 0;
+}
+
+.head_close_text {
+    display: none;
 }
 
 @media screen and (min-width:375px) {
@@ -105,11 +113,20 @@ button {
     }
     .head_back_link {
         height: 70px;
-        width: 70px;
+        width: 120px;
+        text-decoration: none;
     }
     .head_back_icon svg {
         width: 18px;
         height: 18px;
+    }
+    .head_back_text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #EE6146;
+        font-weight: 700;
+        margin-right: 20px;
     }
     .head_info_btn {
         display: flex;
@@ -136,14 +153,29 @@ button {
     }
     .head_title_wrapper {
         font-size: 19px;
-        margin-right: 230px;
+        margin-right: 150px;
     }
     .head_title_wrapper p {
         padding: 2px;
     }
+    .head_close_wrapper {
+        width: 200px;
+    }
+    .head_close_link {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row wrap;
+    }
     .head_close_icon svg {
         height: 35px;
         width: 35px;
+    }
+    .head_close_text {
+        color: #000000;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -223,9 +255,10 @@ button {
 }
 
 .slider_text {
-    width: 95%;
+    width: 100%;
     text-align: center;
-    font-size: 15px; 
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 .slider_content {
@@ -359,8 +392,10 @@ button {
         height: 300px;
     }
     .slider_text {
-        margin: 5px;
+        margin-top: 20px;
         font-size: 17px;
+        width: 80%;
+        text-align: center;
     }
     .slider_right_btn:hover, .slider_left_btn:hover {
         background: #DADFF0;
@@ -437,6 +472,7 @@ button {
     justify-content: center;
     align-self: center;
     background-size: 400%;
+    color: #FFFFFF;
     animation: btnanimate 5s linear infinite, order_button_anim 4s ease-in-out infinite;
 }
 
@@ -499,6 +535,22 @@ button {
     display: none;
 }
 
+.info_panel_circle {
+    display: flex;
+    background: #FFFFFF;
+    border: 2px solid #EE6146;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabbar_horizontal_author {
+    display: none;
+}
+
 @media screen and (min-width:1024px) {
     .tabbar_horizontal_info_panel {
         display: flex;
@@ -525,23 +577,18 @@ button {
         align-items: center;
         font-size: 14px;
     }
-    .info_panel_circle {
-        background: #FFFFFF;
-        border: 2px solid #EE6146;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        font-size: 19px;
-        align-items: center;
-        justify-content: center;
-    }   
+    #non_display_text_1024-1440 {
+        display: none;
+    }
+    .tabbar_horizontal_info_panel .info_panel_circle {
+        display: none;
+    }
     .tabbar_info_panel_order_btn {
         cursor: pointer;
         background: linear-gradient(90deg, #EE6146, #F38D79, #EE6146);
         border-radius: 5px;
-        height: 50px;
-        width: 150px;
+        height: 60px;
+        width: 200px;
         font-size: 17px;
         margin: 10px;
         display: flex;
@@ -551,16 +598,28 @@ button {
         transition: transform .6s;
         background-size: 400%;
         animation: btnanimate 5s linear infinite;
+        color: #FFFFFF;
+        margin-left: 50px;
+    }
+    .tabbar_horizontal_author {
+        display: block;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    #non_display_text_1024-1440 {
+        display: flex;
+    }
+    .tabbar_horizontal_info_panel .info_panel_text {
+        margin-right: 20px;
+    }
+    .tabbar_horizontal_info_panel .info_panel_circle {
+        display: flex;
+        margin-left: 20px;
     }
 }
 
 /* Tabbar Horizontal */
-.tabbat_horizontal {
-    position: relative;
-    bottom: 0;
-    display: flex;
-}
-
 .tabbar_horizontal_forms {
     position: absolute;
     bottom: 0;
@@ -580,14 +639,24 @@ button {
 }
 
 .tabbar_info {
-    margin: 10px 0 30px 10px;
-    width: 25px;
+    margin: 10px 0 10px 10px;
+    width: 100%;
+    display: flex;
+}
+
+.tabbar_horizontal_info_text {
+    margin-right: 15px;
+    text-align: center;
 }
 
 .tabbar_forms {
     display: flex;
     flex-flow: row;
     align-self: center;
+}
+
+.tabbar_forms .tabbar_horizontal_info_text {
+    display: none;
 }
 
 .tabbar_order_form {
@@ -598,6 +667,13 @@ button {
     background: rgb(237, 240, 243);
     border-radius: 6px;
     border: none;
+}
+
+.tabbar_order_form:focus {
+    background: rgb(248, 248, 248);
+    border-radius: 6px;
+    border: 1px solid #000000;
+    outline: none;
 }
 
 .tabbar_btns {
@@ -624,6 +700,7 @@ button {
     border: none;
     position: relative;
     outline: none;
+    color: #FFFFFF;
 }
 
 .tabbar_addcart::after {
@@ -676,7 +753,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .tabbar_position_btns {
@@ -741,6 +818,10 @@ button {
         display: flex;
         margin: 20px 20px 0 0;
     }
+    .tabbar_position_text {
+        color: rgb(180, 180, 180);
+        margin-right: 5px;
+    }
     .tabbar_horizontal_pos_btn {
         width: 20px;
         height: 20px;
@@ -768,6 +849,15 @@ button {
         text-decoration: underline;
         bottom: 10px;
         left: 10px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .tabbar_forms .tabbar_horizontal_info_text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
     }
 }
 
@@ -819,6 +909,7 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         background: linear-gradient(90deg, #EE6146, #F38D79, #EE6146);
         background-size: 400%;
         box-shadow: 0px 10px 14px rgba(241, 126, 104, 0.303212);
@@ -828,11 +919,10 @@ button {
         width: 50px;
         color: #FFFFFF;
         font-size: 40px;
-        text-shadow: 1px 1px 1px #FFFFFF;
         cursor: pointer;
     }
     .tabbar_vertical_close_panel_text {
-        font-size: 15px;
+        font-size: 13px;
         margin: 10px 0 10px 0;
     }
     .tabbar_vertical_info_btn {
@@ -861,30 +951,57 @@ button {
     }
     .tabbar_vertical_head_btns {
         display: flex;
-        flex-direction: row wrap;
+        height: 60px;
+        align-items: center;
+    }
+    .tabbar_vertical_head_btns a {
+        text-decoration: none;
     }
     .tabbar_vertical_back_btn {
-        width: 120px;
-        height: 70px;
-        background: rgb(230, 230, 230);
         display: flex;
         align-items: center;
+        margin-left: 10px;
     }
     .tabbar_vertical_back_btn_icon {
         margin-left: 20px;
     }
+    .tabbar_vertical_head_back_text {
+        color: #000000;
+        margin-left: 10px;
+        font-weight: 700;
+    }
     .tabbar_vertical_close_btn {
         display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .tabbar_vertical_close_btn a {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
         align-items: center;
-        margin-left: 100px;
+    }
+    .tabbar_vertical_close_btn_icon {
+        width: 30px;
+    }
+    .tabbar_vertical_head_close_text {
+        color: #000000;
+        margin-left: 5px;
+        font-weight: 700;
+        width: 100px;
     }
     .tabbar_vertical_head_text {
-        text-align: center;
-        margin-top: 25px;
-        font-size: 18px;
+        text-align: center
+    }
+    .tabbar_vertical_head_text p:first-child {
+        font-size: 22px;
+        font-weight: bold;
+        margin: 5px;
     }
     .tabbar_vertical_head_text p:nth-child(2) {
         color: #EE6146;
+        font-size: 17px;
     }
     .tabbar_vertical_info_panel {
         height: 100%;
@@ -908,13 +1025,16 @@ button {
         display: flex;
         flex-flow: row wrap;
         margin-bottom: 20px;
+        align-items: center;
     }
     .info_content_wrapper .info_panel_circle {
         margin-top: 15px;
         margin-left: 10px;
+        width: 35px;
+        height: 35px;
     }
     .info_content_wrapper .info_panel_text {
-        font-size: 12px;
+        font-size: 14px;
         margin-top: 15px;
     }
     .tabbar_vertical_forms_panel {
@@ -924,20 +1044,23 @@ button {
         flex-direction: column;
     }
     .tabbar_vertical_forms_info {
-        display: flex;
         width: 100%;
-        flex-flow: row wrap;
-        margin-left: 10px;
-        font-size: 18px;
-        align-items: center;
+        display: flex;
+        flex-flow: column wrap;
+        margin: 0 20px 10px 10px;
+    }
+    .vertical_forms_info_wrapper {
+        display: flex;
+        margin-top: 15px;
+    }
+    .tabbar_vertical_forms_info .info_panel_text {
+        display: flex;
+        font-size: 14px;
+        width: 65%;
     }
     .tabbar_vertical_forms_info .info_panel_circle {
-        margin-top: 15px;
-    }
-    .tabbar_vertical_forms_info p {
-        display: flex;
-        align-items: center;
-        margin-top: 15px;
+        height: 35px;
+        width: 35px;
     }
     .tabbar_vertical_forms {
         width: 100%;
@@ -948,16 +1071,30 @@ button {
     .tabbar_vertical_order_form {
         text-align: center;
         width: 270px;
-        height: 50px;
+        height: 40px;
         margin-top: 10px;
         background: rgb(237, 240, 243);
         border-radius: 6px;
         border: none;
         font-size: 19px;
     }
+    .tabbar_vertical_order_form:focus {
+        background: rgb(248, 248, 248);
+        border-radius: 6px;
+        border: 1px solid #000000;
+        outline: none;
+    }
     .tabbar_vertical_forms_btns {
         display: flex;
         justify-content: center;
+    }
+    .tabbar_vertical_forms_btns .tabbar_addcart {
+        height: 50px;
+        width: 185px;
+    }
+    .tabbar_vertical_forms_btns .tabbar_cart {
+        height: 50px;
+        width: 50px;
     }
     .tabbar_vertical_forms_info_btn {
         display: flex;
@@ -968,7 +1105,11 @@ button {
     }
     .tabbar_vertical_pos_btns {
         display: none;
-        margin: 0 0 40px 25px;
+        margin: 0 0 50px 25px;
+    }
+    .tabbar_vertical_position_text {
+        margin-right: 5px;
+        color: rgb(180, 180, 180);
     }
     .tabbar_vertical_pos_btns .tabbar_horizontal_pos_btn {
         width: 20px;
@@ -995,9 +1136,12 @@ button {
         position: absolute;
         font-size: 13px;
         text-decoration: underline;
-        bottom: 10px;
-        left: 10px;
-        z-index: ;
+        bottom: 0;
+        left: 0;
+        background: #ececec;
+        width: 95.5%;
+        padding: 10px 0 10px 15px;
+        overflow: hidden;
     }
 }
 /* Animations */

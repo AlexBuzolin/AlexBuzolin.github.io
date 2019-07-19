@@ -14,8 +14,9 @@
                 <div class="head_back_icon">
                     <svg width="6" height="9" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M2.56248 6L7.64088 1.7684C8.05185 1.41118 8.10174 0.790915 7.75313 0.372614C7.40453 -0.0456862 6.78543 -0.108441 6.35998 0.231398L0.359983 5.2314C0.132234 5.4217 0.000610352 5.70321 0.000610352 6C0.000610352 6.29679 0.132234 6.5783 0.359983 6.7686L6.35998 11.7686C6.78472 12.1193 7.41299 12.0607 7.76564 11.6377C8.11829 11.2146 8.06271 10.586 7.64128 10.2314L2.56248 6Z" fill="#F38D79"/>
-                    </svg>                                   
+                    </svg>                                
                 </div>
+                <p class="head_back_text">Назад</p>
             </a>
         </div>
         <div class="head_info_wrapper" onclick="openPopUp()">
@@ -45,6 +46,7 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M6.48984 6.48959C9.80929 3.17014 15.1912 3.17014 18.5107 6.48959C21.8251 9.81114 21.8251 15.1889 18.5107 18.5104C15.1912 21.8299 9.80929 21.8299 6.48984 18.5104C3.17038 15.191 3.17038 9.80905 6.48984 6.48959ZM7.99244 7.9922C5.50285 10.4818 5.50285 14.5182 7.99244 17.0078C10.4836 19.4935 14.5169 19.4935 17.008 17.0078C19.4976 14.5182 19.4976 10.4818 17.008 7.9922C14.5185 5.5026 10.482 5.5026 7.99244 7.9922Z" fill="black"/>
                     </svg>                   
                 </div>
+                <p class="head_close_text">Закрыть</p>
             </a>
         </div>
     </div>
@@ -74,7 +76,7 @@
                     <div class="slider_content fade">
                         <iframe src="https://www.youtube.com/embed/OXuIqaeg0SI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p class="slider_text">
-                            Находясь в карточке товара, укажите параметры заказываемой вещи “Цена”, “Цвет” и нажмите кнопку “Добавить товар в корзину”
+                            Небольшое видео, быстро покажет, как оформить заказ
                         </p>
                     </div>
                     <div class="slider_content fade">
@@ -138,13 +140,13 @@
         <div class="tabbar_horizontal_info_panel">
             <div class="info_panel_text_wrapper">
                 <div class="info_panel_circle">1</div>
-                <p class="info_panel_text">
+                <p class="info_panel_text" id="non_display_text_1024-1440">
                     Вы просматриваете каталог официального интернет-магазина <br>
                     ralphlauren.com с помощью нашего веб-браузера
                 </p>
                 <div class="info_panel_circle">2</div>
                 <p class="info_panel_text">
-                    Мы поможем выкупить 2 нужные <br>
+                    Мы поможем выкупить нужные <br>
                     вам вещи и доставим за 7-14 дней
                 </p>
             </div>
@@ -168,8 +170,14 @@
                             <path d="M9.5 -0.5C3.99886 -0.5 -0.5 3.99886 -0.5 9.5H0.5C0.5 4.55114 4.55114 0.5 9.5 0.5V-0.5ZM19.5 9.5C19.5 3.99886 15.0011 -0.5 9.5 -0.5V0.5C14.4489 0.5 18.5 4.55114 18.5 9.5H19.5ZM9.5 19.5C15.0011 19.5 19.5 15.0011 19.5 9.5H18.5C18.5 14.4489 14.4489 18.5 9.5 18.5V19.5ZM-0.5 9.5C-0.5 15.0011 3.99886 19.5 9.5 19.5V18.5C4.55114 18.5 0.5 14.4489 0.5 9.5H-0.5ZM9.5 16.6C5.59614 16.6 2.4 13.4039 2.4 9.5H1.4C1.4 13.9561 5.04386 17.6 9.5 17.6V16.6ZM16.6 9.5C16.6 13.4039 13.4039 16.6 9.5 16.6V17.6C13.9561 17.6 17.6 13.9561 17.6 9.5H16.6ZM9.5 2.4C13.4039 2.4 16.6 5.59614 16.6 9.5H17.6C17.6 5.04386 13.9561 1.4 9.5 1.4V2.4ZM2.4 9.5C2.4 5.59614 5.59614 2.4 9.5 2.4V1.4C5.04386 1.4 1.4 5.04386 1.4 9.5H2.4Z" fill="#F28570" mask="url(#path-2-inside-1)"/>
                     </svg>                        
                 </div>
+                <p class="tabbar_horizontal_info_text">
+                    Чтобы сделать заказ заполните поля: "Цена", "Размер" и "Цвет"
+                </p>
             </div>
             <div class="tabbar_forms">
+                <p class="tabbar_horizontal_info_text">
+                    Чтобы сделать заказ заполните поля: "Цена", "Размер" и "Цвет"
+                </p>
                 <input type="text" name="price" class="tabbar_order_form" value="" placeholder="Цена, $" oninput="this.value = this.value.replace(',', '.'); this.value = this.value.replace( /[^0123456789.]/, '' )" onfocus="this._isTouched=true;" required="" autocomplete="off">
                 <input type="text" name="size" class="tabbar_order_form" value="" placeholder="Размер" required="" onfocus="this._isTouched=true;">
                 <input type="text" name="color" class="tabbar_order_form" value="" placeholder="Цвет" required="" onfocus="this._isTouched=true;">
@@ -190,6 +198,7 @@
                 </a>
             </div>
             <div class="tabbar_position_btns">
+                <p class="tabbar_position_text">Вид</p>
                 <div class="tabbar_horizontal_pos_btn"></div>
                 <div class="tabbar_vertical_pos_btn" onclick="verticalPosition()"></div>
             </div>
@@ -227,20 +236,26 @@
         <!-- Tabbar Vertical Head -->
         <div class="tabbar_vertical_head">
             <div class="tabbar_vertical_head_btns">
-                <div class="tabbar_vertical_back_btn">
-                    <a href="#"><div class="tabbar_vertical_back_btn_icon">
-                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.56187 5.98742L7.64027 1.75582C8.05124 1.39861 8.10112 0.778342 7.75252 0.360041C7.40392 -0.0582594 6.78482 -0.121014 6.35937 0.218824L0.359372 5.21882C0.131624 5.40913 0 5.69063 0 5.98742C0 6.28421 0.131624 6.56572 0.359372 6.75602L6.35937 11.756C6.7841 12.1067 7.41238 12.0482 7.76503 11.6251C8.11768 11.202 8.0621 10.5735 7.64067 10.2188L2.56187 5.98742Z" fill="#F38D79"/>
-                        </svg>                                
-                    </div></a>
-                </div>
+                <a href="#">
+                    <div class="tabbar_vertical_back_btn">
+                        <div class="tabbar_vertical_back_btn_icon">
+                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.56187 5.98742L7.64027 1.75582C8.05124 1.39861 8.10112 0.778342 7.75252 0.360041C7.40392 -0.0582594 6.78482 -0.121014 6.35937 0.218824L0.359372 5.21882C0.131624 5.40913 0 5.69063 0 5.98742C0 6.28421 0.131624 6.56572 0.359372 6.75602L6.35937 11.756C6.7841 12.1067 7.41238 12.0482 7.76503 11.6251C8.11768 11.202 8.0621 10.5735 7.64067 10.2188L2.56187 5.98742Z" fill="#000000"/>
+                            </svg>                                
+                        </div>
+                        <p class="tabbar_vertical_head_back_text">Назад</p>
+                    </div>
+                </a>
                 <div class="tabbar_vertical_close_btn">
-                    <a href="#"><div class="tabbar_vertical_close_btn_icon">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a href="#">
+                        <div class="tabbar_vertical_close_btn_icon">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M15.389 14.0909L13.798 12.4999L15.389 10.909C15.8284 10.4696 15.8284 9.75731 15.389 9.31797C14.9497 8.87863 14.2374 8.87863 13.798 9.31797L12.207 10.909L10.616 9.31797C10.1767 8.87863 9.46439 8.87863 9.02505 9.31797C8.58571 9.75731 8.58571 10.4696 9.02505 10.909L10.616 12.4999L9.02505 14.0909C8.58571 14.5303 8.58571 15.2426 9.02505 15.6819C9.46439 16.1213 10.1767 16.1213 10.616 15.6819L12.207 14.0909L13.798 15.6819C14.2374 16.1213 14.9497 16.1213 15.389 15.6819C15.8284 15.2426 15.8284 14.5303 15.389 14.0909Z" fill="black"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.19662 6.48966C9.51608 3.1702 14.898 3.1702 18.2174 6.48966C21.5319 9.8112 21.5319 15.1889 18.2174 18.5105C14.898 21.8299 9.51608 21.8299 6.19662 18.5105C2.87717 15.191 2.87717 9.80911 6.19662 6.48966ZM7.69923 7.99226C5.20963 10.4818 5.20963 14.5183 7.69923 17.0079C10.1904 19.4936 14.2236 19.4936 16.7148 17.0079C19.2044 14.5183 19.2044 10.4818 16.7148 7.99226C14.2252 5.50267 10.1888 5.50267 7.69923 7.99226Z" fill="black"/>
-                        </svg>                                
-                    </div></a>
+                            </svg>                                
+                        </div>
+                        <p class="tabbar_vertical_head_close_text">Закрыть</p>
+                    </a>
                 </div>
             </div>
             <div class="tabbar_vertical_head_text">
@@ -259,7 +274,7 @@
                 </p>
                 <div class="info_panel_circle">2</div>
                 <p class="info_panel_text">
-                    Мы поможем выкупить 2 нужные <br>
+                    Мы поможем выкупить нужные <br>
                     вам вещи и доставим за 7-14 дней
                 </p>
             </div>
@@ -278,28 +293,32 @@
                     </div>
                     <div class="head_info_text">Как сделать заказ?</div>
                 </div>
-                <div class="tabbar_horizontal_author">
+                <div class="tabbar_vertical_author">
                     <p>Powered by ProxyAnything.com</p>
                 </div>
             </div>
-
         </div>
         <!-- Tabbar Vertical Forms Panel -->
         <div class="tabbar_vertical_forms_panel">
             <div class="tabbar_vertical_forms_info">
-                <div class="info_panel_circle">1</div>
-                <p class="info_panel_text">
-                Переходите в карточку товара <br> или вещи
-                </p>
-                <div class="info_panel_circle">2</div>
-                <p class="info_panel_text">
-                Укажите требуемый для заказа: <br> размер, цвет и цену
-                </p>
-                <div class="info_panel_circle">3</div>
-                <p class="info_panel_text">
-                Нажмите на кнопку <br> 
-                “Добавить товар в корзину”  
-                </p>
+                <div class="vertical_forms_info_wrapper">
+                    <div class="info_panel_circle">1</div>
+                    <p class="info_panel_text">
+                        Переходите в карточку товара или вещи
+                    </p>
+                </div>
+                <div class="vertical_forms_info_wrapper">
+                    <div class="info_panel_circle">2</div>
+                    <p class="info_panel_text">
+                        Укажите требуемый для заказа: размер, цвет и цену
+                    </p>
+                </div>
+                <div class="vertical_forms_info_wrapper">
+                    <div class="info_panel_circle">3</div>
+                    <p class="info_panel_text">
+                        Нажмите на кнопку “Добавить товар в корзину”  
+                    </p>
+                </div>
             </div>
             <div class="tabbar_vertical_forms">
                 <input type="text" name="price" class="tabbar_vertical_order_form" value="" placeholder="Цена, $" oninput="this.value = this.value.replace(',', '.'); this.value = this.value.replace( /[^0123456789.]/, '' )" onfocus="this._isTouched=true;" required="" autocomplete="off">
@@ -338,11 +357,12 @@
                     </div>
                 </div>
             </div>
-            <div class="tabbar_horizontal_author">
+            <div class="tabbar_vertical_author">
                 <p>Powered by ProxyAnything.com</p>
             </div>
         </div>
         <div class="tabbar_vertical_pos_btns">
+            <p class="tabbar_vertical_position_text">Вид</p>
             <div class="tabbar_horizontal_pos_btn" onclick="horizontalPosition()"></div>
             <div class="tabbar_vertical_pos_btn"></div>
         </div>
