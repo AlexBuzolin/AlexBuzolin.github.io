@@ -42,40 +42,40 @@ function tabbarVerticalOpnCls() {
         tabbarVerticalFormsPanel = document.querySelector('.tabbar_GFBqnm64amWoxqfX_vertical_forms_panel');
         tabbarPosBtns = document.querySelector('.tabbar_GFBqnm64amWoxqfX_vertical_pos_btns');
         tabbarClosePanel = document.querySelector('.tabbar_GFBqnm64amWoxqfX_vertical_close_panel_btns');
+        tabbarVerticalAuthor = document.querySelector('.tabbar_GFBqnm64amWoxqfX_vertical_author');
     
     if (closeTabbarVertical === false) {
         tabbarVertical.classList.remove('tabbar_GFBqnm64amWoxqfX_vertical_close');
-        tabbarVerticalHead.style.display = 'flex'
+        tabbarVerticalHead.style.left = '0'
         tabbarRightBtn.style.left = '320px';
         tabbarRightBtnIcon.style.transform = 'rotateZ(180deg)';
-        tabbarVerticalInfoPanel.style.display = 'flex';
-        tabbarVerticalFormsPanel.style.display = 'flex';
+        tabbarVerticalInfoPanel.style.left = '0';
+        tabbarVerticalFormsPanel.style.left = '0';
         tabbarPosBtns.style.display = 'flex';
         tabbarClosePanel.style.display = 'none';
+        tabbarVerticalAuthor.style.left = '0';
 
         closeTabbarVertical = true;
     } else if (closeTabbarVertical = true) {
         tabbarVertical.classList.add('tabbar_GFBqnm64amWoxqfX_vertical_close');
-        tabbarVerticalHead.style.display = 'none'
+        tabbarVerticalHead.style.left = '-320px'
         tabbarRightBtn.style.left = '120px';
         tabbarRightBtnIcon.style.transform = 'rotateZ(0)';
-        tabbarVerticalInfoPanel.style.display = 'none';
-        tabbarVerticalFormsPanel.style.display = 'none';
+        tabbarVerticalInfoPanel.style.left = '-320px';
+        tabbarVerticalFormsPanel.style.left = '-320px';
         tabbarPosBtns.style.display = 'none';
         tabbarClosePanel.style.display = 'flex';
+        tabbarVerticalAuthor.style.left = '-320px';
 
         closeTabbarVertical = false;
     }
 }
 
 //Close Tabbar info panel
-function closeTabbarHorizontalInfoPanel() {
+function closeInfoPanel() {
     let tabbarInfoPanel = document.querySelector('.tabbar_GFBqnm64amWoxqfX_horizontal_info_panel');
-    tabbarInfoPanel.style.display = 'none';
-}
-
-function closeTabbarVerticalInfoPanel() {
     let tabbarVerticalInfoPanel = document.querySelector('.tabbar_GFBqnm64amWoxqfX_vertical_info_panel');
+    tabbarInfoPanel.style.display = 'none';
     tabbarVerticalInfoPanel.style.display = 'none';
 }
 
