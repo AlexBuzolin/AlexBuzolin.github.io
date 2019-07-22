@@ -873,11 +873,11 @@ button {
 /* Tabbar Vertical */
 .tabbar_GFBqnm64amWoxqfX_vertical {
     display: none;
-    font-family: 'Gotham Pro' !important;
 }
 
 @media screen and (min-width:1024px) {
     .tabbar_GFBqnm64amWoxqfX_vertical {
+        font-family: 'Gotham Pro' !important;
         display: none;
         flex-direction: column;
         position: absolute;
@@ -1056,7 +1056,6 @@ button {
         position: absolute;
         top: 160px;
         left: -320px;
-        bottom: -100%;
         transition: left .6s;
         background: #FFFFFF;
     }
